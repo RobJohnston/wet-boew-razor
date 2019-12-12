@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCIntranet", "src\GCIntranet\GCIntranet.csproj", "{4FAEB0CA-48E2-4049-909C-E99A81A6BEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCIntranet", "src\GCIntranet\GCIntranet.csproj", "{4FAEB0CA-48E2-4049-909C-E99A81A6BEC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CDD7009A-B885-451E-8C97-E98E9D10B2B7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
