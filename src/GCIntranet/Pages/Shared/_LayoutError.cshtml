@@ -4,25 +4,19 @@
 <html class="no-js" lang="@Localizer["en"]" dir="ltr">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"]  - Working examples - Web Experience Toolkit</title>
+    <title>@ViewData["Title"]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta data -->
-    <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
-    <meta name="dcterms.title" content="Content page - No search, language toggle, site menu or breadcrumb trail - Web Experience Toolkit">
-    <meta name="dcterms.creator" content="French name of the content author / Nom en français de l'auteur du contenu">
-    <meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)">
-    <meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)">
-    <meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français">
-    <meta name="dcterms.language" title="ISO639-2" content="@Localizer["eng"]">
+    <meta name="robots" content="noindex, nofollow, noarchive">
     <!-- Meta data-->
     <link href="~/lib/wet-boew/dist/theme-gc-intranet/assets/favicon.ico" rel="icon" type="image/x-icon">
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme.css">
+        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme-srv.css">
         <link rel="stylesheet" href="~/css/site.css" />
         <noscript><link rel="stylesheet" href="~/lib/wet-boew/dist/wet-boew/css/noscript.css" /></noscript>
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme.min.css">
+        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme-srv.min.css">
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
         <noscript><link rel="stylesheet" href="~/lib/wet-boew/dist/wet-boew/css/noscript.min.css" /></noscript>
     </environment>
@@ -36,13 +30,23 @@
             <a class="wb-sl" href="#wb-info">@Localizer["Skip to \"About this site\""]</a>
         </li>
     </ul>
-    <partial name="_HeaderPartial" />
+    <header role="banner" id="wb-bnr">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="gcwu-sig" src="~/lib/wet-boew/dist/theme-gc-intranet/assets/sig-blk-@(Localizer["en"]).svg" alt="@Localizer["Government of Canada / Gouvernement du Canada"]">
+                </div>
+                <div class="col-sm-6">
+                    <img id="wmms" src="~/lib/wet-boew/dist/theme-gc-intranet/assets/wmms-intra.svg" alt="@Localizer["Symbol of the Government of Canada"]">
+                </div>
+            </div>
+        </div>
+    </header>
     <main role="main" property="mainContentOfPage" class="container">
-        <h1 id="wb-cont" property="name">@ViewData["Title"]</h1>
-
-        @RenderBody()
+        <div class="row mrgn-tp-lg">
+            @RenderBody()
+        </div>
     </main>
-    <partial name="_FooterPartial" />
     <environment include="Development">
         <script src="~/lib/wet-boew/dist/wet-boew/js/jquery/2.1.4/jquery.js"></script>
         <script src="~/lib/wet-boew/dist/wet-boew/js/wet-boew.js"></script>
