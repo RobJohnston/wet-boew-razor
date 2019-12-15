@@ -27,14 +27,22 @@
         <li class="wb-slc visible-sm visible-md visible-lg">
             <a class="wb-sl" href="#wb-info">@Localizer["Skip to \"About this site\""]</a>
         </li>
+        <li class="wb-slc visible-md visible-lg">
+            <a class="wb-sl" href="#wb-sec">@Localizer["Skip to section menu"]</a>
+        </li>
     </ul>
     <partial name="_HeaderPartial" />
-    <main role="main" property="mainContentOfPage" class="container">
-        <h1 id="wb-cont" property="name">@ViewData["Title"]</h1>
+    <div class="container">
+        <div class="row">
+            <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
+                <h1 id="wb-cont" property="name">@ViewData["Title"]</h1>
 
-        @RenderBody()
-        @RenderSection("DateModified", required: false)
-    </main>
+                @RenderBody()
+                @RenderSection("DateModified", required: false)
+            </main>
+            <partial name="_SecondaryMenuPartial" />
+        </div>
+    </div>
     <partial name="_FooterPartial" />
     <environment include="Development">
         <script src="~/lib/wet-boew/dist/wet-boew/js/jquery/2.1.4/jquery.js"></script>
