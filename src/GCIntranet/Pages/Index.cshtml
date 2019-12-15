@@ -2,42 +2,52 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Government of Canada Intranet theme";
+    ViewData["Description"] = "Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities";
+    ViewData["Subject"] = "French subject terms / Termes de sujet en français";
 }
 
-    <section>
-        <h2 id="en" tabindex="-1">English</h2>
-        <ul>
-            <li><a asp-page="/Content" asp-route-culture="en">Content page<span class="wb-inv"> - English</span></a></li>
-            <li>Content page - Secondary menu<span class="wb-inv"> - English</span></li>
-            <li>Content page - Sub-site<span class="wb-inv"> - English</span></li>
-            <li>Content page - No search or language selection link<span class="wb-inv"> - English</span></li>
-            <li>Content page - No site menu or breadcrumb trail<span class="wb-inv"> - English</span></li>
-            <li>Content page - No search, language selection link, site menu or breadcrumb trail<span class="wb-inv"> - English</span></li>
-            <li>Content page - Signed Off<span class="wb-inv"> - English</span></li>
-            <li>Content page - Signed On<span class="wb-inv"> - English</span></li>
-            <li><a asp-page="/SplashPage">Splash page<span class="wb-inv"> - English</span></a></li>
-            <li>404 error page<span class="wb-inv"> - English</span></li>
-            <li><a asp-page="/Error404">404 error page - English/French</a></li>
-            <li>Server message page - English/French</li>
-            <li><a asp-page="/Error" asp-route-culture="en">Server message page<span class="wb-inv"> - English</span></a></li>
-        </ul>
-    </section>
+<section>
+    <h2 id="en" tabindex="-1">English</h2>
+    <ul>
+        <li><a asp-page="/Content" asp-route-culture="en">Content page<span class="wb-inv"> - English</span></a></li>
+        <li>Content page - Secondary menu<span class="wb-inv"> - English</span></li>
+        <li>Content page - Sub-site<span class="wb-inv"> - English</span></li>
+        <li>Content page - No search or language selection link<span class="wb-inv"> - English</span></li>
+        <li>Content page - No site menu or breadcrumb trail<span class="wb-inv"> - English</span></li>
+        <li>Content page - No search, language selection link, site menu or breadcrumb trail<span class="wb-inv"> - English</span></li>
+        <li>Content page - Signed Off<span class="wb-inv"> - English</span></li>
+        <li>Content page - Signed On<span class="wb-inv"> - English</span></li>
+        <li><a asp-page="/SplashPage">Splash page<span class="wb-inv"> - English</span></a></li>
+        <li>404 error page<span class="wb-inv"> - English</span></li>
+        <li><a asp-page="/Error404">404 error page - English/French</a></li>
+        <li>Server message page - English/French</li>
+        <li><a asp-page="/Error" asp-route-culture="en">Server message page<span class="wb-inv"> - English</span></a></li>
+    </ul>
+</section>
 
-    <section>
-        <h2 id="fr" tabindex="-1">French</h2>
-        <ul>
-            <li><a asp-page="/Content" asp-route-culture="fr">Content page<span class="wb-inv"> - French</span></a></li>
-            <li>Content page - Secondary menu<span class="wb-inv"> - French</span></li>
-            <li>Content page - Sub-site<span class="wb-inv"> - French</span></li>
-            <li>Content page - No search or language selection link<span class="wb-inv"> - French</span></li>
-            <li>Content page - No site menu or breadcrumb trail<span class="wb-inv"> - French</span></li>
-            <li>Content page - No search, language selection link, site menu or breadcrumb trail<span class="wb-inv"> - French</span></li>
-            <li>Content page - Signed Off<span class="wb-inv"> - French</span></li>
-            <li>Content page - Signed On<span class="wb-inv"> - French</span></li>
-            <li>Splash page<span class="wb-inv"> - French</span></li>
-            <li>404 error page<span class="wb-inv"> - French</span></li>
-            <li>404 error page - French/English</li>
-            <li>Server message page - French/English</li>
-            <li>Server message page<span class="wb-inv"> - French</span></li>
-        </ul>
-    </section>
+<section>
+    <h2 id="fr" tabindex="-1">French</h2>
+    <ul>
+        <li><a asp-page="/Content" asp-route-culture="fr">Content page<span class="wb-inv"> - French</span></a></li>
+        <li>Content page - Secondary menu<span class="wb-inv"> - French</span></li>
+        <li>Content page - Sub-site<span class="wb-inv"> - French</span></li>
+        <li>Content page - No search or language selection link<span class="wb-inv"> - French</span></li>
+        <li>Content page - No site menu or breadcrumb trail<span class="wb-inv"> - French</span></li>
+        <li>Content page - No search, language selection link, site menu or breadcrumb trail<span class="wb-inv"> - French</span></li>
+        <li>Content page - Signed Off<span class="wb-inv"> - French</span></li>
+        <li>Content page - Signed On<span class="wb-inv"> - French</span></li>
+        <li>Splash page<span class="wb-inv"> - French</span></li>
+        <li>404 error page<span class="wb-inv"> - French</span></li>
+        <li>404 error page - French/English</li>
+        <li>Server message page - French/English</li>
+        <li>Server message page<span class="wb-inv"> - French</span></li>
+    </ul>
+</section>
+
+@section DateModified
+{
+    <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd><time property="dateModified">2019-12-15</time></dd>
+    </dl>
+}

@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en" xml:space="preserve">
-    <value>fr</value>
-    <comment>BCP47</comment>
-  </data>
-  <data name="Skip to &quot;About this site&quot;" xml:space="preserve">
-    <value>Passer à « À propos de ce site »</value>
-  </data>
-  <data name="Skip to main content" xml:space="preserve">
-    <value>Passer au contenu principal</value>
+  <data name="eng" xml:space="preserve">
+    <value>fra</value>
+    <comment>ISO639-2</comment>
   </data>
 </root>

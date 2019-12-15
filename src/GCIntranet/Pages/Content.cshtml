@@ -1,7 +1,11 @@
 ﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 @model GCIntranet.Pages.ContentModel
 @{
-    ViewData["Title"] = "Content page";
+    ViewData["Title"] = @Localizer["Content page"];
+    ViewData["Description"] = @Localizer["Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities"];
+    ViewData["Subject"] = @Localizer["French subject terms / Termes de sujet en français"];
 }
 
 <section>
@@ -115,7 +119,12 @@
     <p>"<code>blockquote</code>"</p>
     <footer><code>footer</code> <cite><code>cite</code></cite></footer>
 </blockquote>
-<dl id="wb-dtmd">
-    <dt>Date modified:&#32;</dt>
-    <dd><time property="dateModified">2014-02-19</time></dd>
-</dl>
+
+@section DateModified
+{
+    <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd><time property="dateModified">2014-02-19</time></dd>
+    </dl>
+}
+
