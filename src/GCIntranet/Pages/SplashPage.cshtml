@@ -1,0 +1,79 @@
+﻿@page
+@model GCIntranet.Pages.SplashPageModel
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Language selection - Government of Canada Intranet theme - Web Experience Toolkit / Sélection de la langue - Thème du gouvernement du Canada pour les sites intranet - Boîte à outils de l’expérience Web - Web Experience Toolkit</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Meta data -->
+    <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+    <!-- Meta data-->
+    <link href="~/lib/wet-boew/dist/theme-gc-intranet/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme.css">
+        <noscript><link rel="stylesheet" href="~/lib/wet-boew/dist/wet-boew/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/wet-boew/dist/theme-gc-intranet/css/theme.min.css">
+        <noscript><link rel="stylesheet" href="~/lib/wet-boew/dist/wet-boew/css/noscript.min.css" /></noscript>
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+    <header role="banner" id="wb-bnr">
+        <div class="container">
+            <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="~/lib/wet-boew/dist/theme-gc-intranet/assets/logo.svg" alt="Web Experience Toolkit">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main" property="mainContentOfPage" class="container">
+        <div class="row mrgn-tp-lg">
+            <div class="col-md-12">
+                <!-- Include as many languages here as are defined in the  Startup.cs ConfigureServices() method. -->
+                <h1 class="wb-inv">Language selection - Government of Canada Intranet theme - Web Experience Toolkit / <span lang="fr">Sélection de la langue - Thème du gouvernement du Canada pour les sites intranet - Boîte à outils de l’expérience Web</span></h1>
+                <section class="col-md-6">
+                    <h2 class="h3 text-center">Government of Canada Intranet theme - Web Experience Toolkit</h2>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-lg btn-primary btn-block" href="./SplashPage?culture=en">English</a></li>
+                        <li><a class="btn btn-lg btn-default btn-block mrgn-tp-sm" asp-page="#" rel="license">Terms and conditions of use</a></li>
+                    </ul>
+                </section>
+                <section class="col-md-6" lang="fr">
+                    <h2 class="h3 text-center">Thème du gouvernement du Canada pour les sites intranet - Boîte à outils de l’expérience Web</h2>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-lg btn-primary btn-block" href="./SplashPage?culture=fr">Français</a></li>
+                        <li><a class="btn btn-lg btn-default btn-block mrgn-tp-sm" asp-page="#" rel="license">Conditions régissant l'utilisation</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <environment include="Development">
+        <script src="~/lib/wet-boew/dist/wet-boew/js/jquery/2.1.4/jquery.js"></script>
+        <script src="~/lib/wet-boew/dist/wet-boew/js/wet-boew.js"></script>
+        <script src="~/lib/wet-boew/dist/theme-gc-intranet/js/theme.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
+                asp-fallback-src="~/lib/wet-boew/dist/wet-boew/js/jquery/2.1.4/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx">
+        </script>
+        <script src="~/lib/wet-boew/dist/wet-boew/js/wet-boew.min.js"></script>
+        <script src="~/lib/wet-boew/dist/theme-gc-intranet/js/theme.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+</body>
+</html>

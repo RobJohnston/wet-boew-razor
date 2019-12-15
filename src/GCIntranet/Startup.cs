@@ -50,8 +50,10 @@ namespace GCIntranet
             {
                 var supportedCultures = new[]
                 {
-                    new CultureInfo("en-CA"),
-                    new CultureInfo("fr")
+                    new CultureInfo("en"),
+                    new CultureInfo("fr"),
+                    // Include additional names to appear as a language selection link. Add same to SplashPage manually.
+                    //new CultureInfo("es-MX")
                 };
 
                 // State what the default culture for your application is. This will be used if no specific culture

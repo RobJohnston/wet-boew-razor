@@ -6,6 +6,7 @@
             <div class="container">
                 <div class="row">
                     <img id="gcwu-sig" src="~/lib/wet-boew/dist/theme-gc-intranet/assets/sig-blk-@(Localizer["en"]).svg" alt="@Localizer["Government of Canada / Gouvernement du Canada"]">
+                    <partial name="_SelectLanguagePartial" />
                     <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
                         <h2>@Localizer["Search and menus"]</h2>
                         <ul class="pnl-btn list-inline text-right">
@@ -25,6 +26,7 @@
                     <img id="wmms" src="~/lib/wet-boew/dist/theme-gc-intranet/assets/wmms-intra.svg" alt="@Localizer["Symbol of the Government of Canada"]">
                 </div>
             </div>
+            <partial name="_SearchPartial" />
         </div>
     </div>
     <span data-trgt="mb-pnl" class="wb-menu hide"></span>
