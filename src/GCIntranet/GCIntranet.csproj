@@ -17,4 +17,9 @@
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\ajax\sitemenu-en.html" />
+    <None Include="wwwroot\ajax\sitemenu-fr.html" />
+  </ItemGroup>
+
 </Project>

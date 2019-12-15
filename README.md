@@ -15,11 +15,11 @@ ASP.NET Razor variant of the [Web Experience Toolkit (WET) ](https://github.com/
  ## Status of page examples
  |    Covered     |  Description
  |:--------------:|:--------------
-  ❌              | Content page
+  ✔              | Content page
   ❌              | Content page - Secondary menu
   ❌              | Content page - Sub-site
   ❌              | Content page - No search or language selection link
-  ✔              | Content page - No site menu or breadcrumb trail
+  ❌              | Content page - No site menu or breadcrumb trail
   ❌               | Content page - No search, language selection link, site menu or breadcrumb trail
   ❌              | Content page - Signed Off
   ❌              | Content page - Signed On

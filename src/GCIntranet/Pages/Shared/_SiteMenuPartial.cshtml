@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<nav role="navigation" id="wb-sm" data-ajax-replace="/ajax/sitemenu-@(Localizer["en"]).html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+        <h2>@Localizer["Topics menu"]</h2>
+        <div class="row">
+            <ul class="list-inline menu">
+                @*TODO: Change these links to be specific to your application and 
+                    do the same for the /ajax/sitemenu-??.html files in wwwroot.*@ 
+                <li><a asp-page="/Index">WET project</a></li>
+                <li><a href="javascript:alert('./docs/start-en.html#implement')">Implement WET</a></li>
+                <li><a href="javascript:alert('./docs/start-en.html')">Contribute to WET</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
