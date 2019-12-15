@@ -48,6 +48,7 @@ namespace GCIntranet
             // Configure supported cultures and localization options
             services.Configure<RequestLocalizationOptions>(options =>
             {
+                // If only one culture is defined then the language selection link(s) will not appear.
                 var supportedCultures = new[]
                 {
                     new CultureInfo("en"),
