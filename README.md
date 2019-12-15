@@ -23,7 +23,7 @@ ASP.NET Razor variant of the [Web Experience Toolkit (WET) ](https://github.com/
   ❌               | Content page - No search, language selection link, site menu or breadcrumb trail
   ❌              | Content page - Signed Off
   ❌              | Content page - Signed On
-  ❌              | Splash page
+  ✔              | Splash page
   ❌              | 404 error page
   ✔               | 404 error page - English/French
   ❌              | Server message page - English/French
