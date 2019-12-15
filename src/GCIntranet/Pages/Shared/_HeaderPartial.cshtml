@@ -29,8 +29,12 @@
             <partial name="_SearchPartial" />
         </div>
     </div>
+    @if (!String.IsNullOrWhiteSpace(ViewData["SubSiteName"]?.ToString()))
+    {
+        <partial name="_SubsitePartial" />
+    }
     @*NOTE: The next line is required when the site menu and breadcrumbs are not used.
         <span data-trgt="mb-pnl" class="wb-menu hide"></span>*@
     <partial name="_SiteMenuPartial" />
-    <partial name="_BreadcrumbPartial"/>
+    <partial name="_BreadcrumbPartial" />
 </header>
