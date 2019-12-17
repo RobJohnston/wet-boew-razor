@@ -1,0 +1,6 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+    <dl id="wb-dtmd">
+        <dt>@Localizer["Date modified:"]&#32;</dt>
+        <dd><time property="dateModified">@ViewData["Modified"]</time></dd>
+    </dl>

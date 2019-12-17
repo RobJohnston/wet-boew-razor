@@ -17,7 +17,7 @@ ASP.NET Razor variant of the [Web Experience Toolkit (WET) ](https://github.com/
  |:--------------:|:--------------
   ✔              | Content page
   ✔              | Content page - Secondary menu
-  ❌              | Content page - Sub-site
+  ✔              | Content page - Sub-site
   ❌              | Content page - No search or language selection link
   ❌              | Content page - No site menu or breadcrumb trail
   ❌              | Content page - No search, language selection link, site menu or breadcrumb trail
