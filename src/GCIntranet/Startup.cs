@@ -90,6 +90,9 @@ namespace GCIntranet
             app.UseRequestLocalization(locOptions.Value);
 
             app.UseStatusCodePagesWithReExecute("/Error{0}");
+            // Use one of the next two lines instead of the previous line to have a bilingual 404 page.
+            //app.UseStatusCodePagesWithReExecute("/Error{0}-en-fr");
+            //app.UseStatusCodePagesWithReExecute("/Error{0}-fr-en");
 
             if (env.IsDevelopment())
             {

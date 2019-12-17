@@ -20,8 +20,8 @@
         <li>Content page - Signed Off<span class="wb-inv"> - English</span></li>
         <li>Content page - Signed On<span class="wb-inv"> - English</span></li>
         <li><a asp-page="/SplashPage">Splash page<span class="wb-inv"> - English</span></a></li>
-        <li>404 error page<span class="wb-inv"> - English</span></li>
-        <li><a asp-page="/Error404">404 error page - English/French</a></li>
+        <li><a asp-page="/Error404" asp-route-culture="en">404 error page<span class="wb-inv"> - English</span></a></li>
+        <li><a asp-page="/Error404-en-fr" asp-route-culture="en">404 error page - English/French</a></li>
         <li>Server message page - English/French</li>
         <li><a asp-page="/Error" asp-route-culture="en">Server message page<span class="wb-inv"> - English</span></a></li>
     </ul>
@@ -39,8 +39,8 @@
         <li>Content page - Signed Off<span class="wb-inv"> - French</span></li>
         <li>Content page - Signed On<span class="wb-inv"> - French</span></li>
         <li>Splash page<span class="wb-inv"> - French</span></li>
-        <li>404 error page<span class="wb-inv"> - French</span></li>
-        <li>404 error page - French/English</li>
+        <li><a asp-page="/Error404" asp-route-culture="fr">404 error page<span class="wb-inv"> - French</span></a></li>
+        <li><a asp-page="/Error404-fr-en" asp-route-culture="fr">404 error page - French/English</a></li>
         <li>Server message page - French/English</li>
         <li>Server message page<span class="wb-inv"> - French</span></li>
     </ul>

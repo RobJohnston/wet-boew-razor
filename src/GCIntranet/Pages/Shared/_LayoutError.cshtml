@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 <!DOCTYPE html>
-<html class="no-js" lang="@Localizer["en"]" dir="ltr">
+<html class="no-js" lang="@Localizer["en"]" dir="@Localizer["ltr"]">
 <head>
     <meta charset="utf-8" />
     <title>@ViewData["Title"]</title>
@@ -22,14 +22,6 @@
     </environment>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-    <ul id="wb-tphp">
-        <li class="wb-slc">
-            <a class="wb-sl" href="#wb-cont">@Localizer["Skip to main content"]</a>
-        </li>
-        <li class="wb-slc visible-sm visible-md visible-lg">
-            <a class="wb-sl" href="#wb-info">@Localizer["Skip to \"About this site\""]</a>
-        </li>
-    </ul>
     <header role="banner" id="wb-bnr">
         <div class="container">
             <div class="row">
