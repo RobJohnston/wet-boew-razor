@@ -2,7 +2,7 @@
 ASP.NET Razor variant of the [Web Experience Toolkit (WET) ](https://github.com/wet-boew/)
 
 ## Requirements
-* ASP.NET Core 2.1
+* ASP.NET Core 3.0
 
 ## Highlights
 * [GC Intranet theme v4.0.27](https://wet-boew.github.io/themes-dist/theme-gc-intranet/index-en.html#en)
