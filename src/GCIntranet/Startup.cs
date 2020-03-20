@@ -39,6 +39,8 @@ namespace GCIntranet
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             services.AddRazorPages()
+                // Opt in to runtime compilation.
+                .AddRazorRuntimeCompilation()
                 // Add support for finding localized views, based on file name suffix, e.g. Index.fr.cshtml
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
                 // Add support for localizing strings in data annotations (e.g. validation messages) via the
