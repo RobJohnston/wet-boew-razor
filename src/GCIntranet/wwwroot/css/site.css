@@ -1,3 +1,25 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
 
+/*
+    Style the form validation errors.
+*/
+.field-validation-error {
+
+}
+.field-validation-valid {
+
+}
+.input-validation-error {
+
+}
+.input-validation-valid {
+
+}
+.validation-summary-errors {
+
+}
+.validation-summary-valid {
+    /*Don't show the validation summary content unless the form is invalid.*/
+    display: none;
+}

@@ -1,0 +1,93 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model GCIntranet.Pages.demos.formvalid.IndexModel
+@{
+    ViewData["Title"] = @Localizer["Form validation"];
+    ViewData["Description"] = @Localizer["Provides generic validation and error message handling for Web forms."];
+    ViewData["Subject"] = @Localizer[""];
+    ViewData["Issued"] = "2020-12-12";
+    ViewData["Modified"] = "2020-12-25";
+}
+
+<section>
+    <h2>Purpose</h2>
+    <p>Provides generic validation and error message handling for Web forms.    </p>
+</section>
+<section>
+    <h2>Examples</h2>
+
+    @*<div class="wb-frmvld">*@
+        <form id="frm-contact" method="post">
+            <div asp-validation-summary="All"></div>
+
+            <fieldset>
+                <legend>Contact information</legend>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.Title"></label>
+                    <div>
+                        <select class="form-control" asp-for="ContactInformation.Title" autocomplete="honorific-prefix">
+                            <option label="Select a title"></option>
+                            <option value="dr">Dr.</option>
+                            <option value="esq">Esq.</option>
+                            <option value="mr">Mr.</option>
+                            <option value="ms">Ms.</option>
+                        </select>
+                        <span asp-validation-for="ContactInformation.Title"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.FirstName"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.FirstName" autocomplete="given-name" />
+                        <span asp-validation-for="ContactInformation.FirstName"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.LastName"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.LastName" autocomplete="family-name" />
+                        <span asp-validation-for="ContactInformation.LastName"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.Telephone"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.Telephone" autocomplete="tel" />
+                        <span asp-validation-for="ContactInformation.Telephone"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.PostalCode"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.PostalCode" autocomplete="postal-code" />
+                        <span asp-validation-for="ContactInformation.PostalCode"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.Email"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.Email" autocomplete="email" />
+                        <span asp-validation-for="ContactInformation.Email"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ContactInformation.Website"></label>
+                    <div>
+                        <input class="form-control" asp-for="ContactInformation.Website" autocomplete="url" />
+                        <span asp-validation-for="ContactInformation.Website"></span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    @*</div>*@
+</section>
