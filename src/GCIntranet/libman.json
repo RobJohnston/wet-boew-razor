@@ -160,17 +160,18 @@
         "jquery.pjax.js"
       ]
     },
-    {
-      "provider": "cdnjs",
-      "library": "jquery-validate@1.15.1",
-      "destination": "wwwroot/lib/wet-boew/dist/wet-boew/js/deps/",
-      "files": [
-        "jquery.validate.min.js",
-        "additional-methods.js",
-        "additional-methods.min.js",
-        "jquery.validate.js"
-      ]
-    },
+    // Updated to a newer version below with jQuery Unobtrusive Validation.
+    //{
+    //  "provider": "cdnjs",
+    //  "library": "jquery-validate@1.15.1",
+    //  "destination": "wwwroot/lib/wet-boew/dist/wet-boew/js/deps/",
+    //  "files": [
+    //    "jquery.validate.min.js",
+    //    "additional-methods.js",
+    //    "additional-methods.min.js",
+    //    "jquery.validate.js"
+    //  ]
+    //},
     {
       "provider": "cdnjs",
       "library": "magnific-popup.js@1.0.0",
@@ -254,6 +255,23 @@
         "run_prettify.js",
         "run_prettify.min.js"
       ]
+    },
+    // Add jQuery Unobtrusive Validation, with a more recent version of JQuery Validate than what WET provides.
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validation/",
+      "files": [
+        "jquery.validate.min.js",
+        "additional-methods.js",
+        "additional-methods.min.js",
+        "jquery.validate.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validation-unobtrusive@3.2.2",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     }
   ]
 }
